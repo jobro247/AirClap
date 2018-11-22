@@ -39,6 +39,5 @@ if main_choice == 'e':
   os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
   menu_loop = raw_input("Would you like to return to main menu? y/n:")
   if menu_loop == 'y':
-    loop
-  else:
+    
     break
