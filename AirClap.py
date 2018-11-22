@@ -12,9 +12,9 @@ print ("Scan for clients /5")
 print ("-------------------------------------------")
 main_choice = raw_input("I choose:")
 if main_choice == 1:
-  os.system("airodump-ng wlan0mon")
-  print ("Make sure you copy the bssid of the network you want to target!")
-  print ("And make sure to remeber the channel")
+os.system("airodump-ng wlan0mon")
+print ("Make sure you copy the bssid of the network you want to target!")
+print ("And make sure to remeber the channel")
 if main_choice == 2:
   os.system("airmon-ng start wlan0")
 if main_choice == 3:
