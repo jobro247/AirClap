@@ -1,14 +1,8 @@
 import os
 
-scan = input("do you want to start scanning for networks to CLAP Yes or no:")
+print ("if you want to exit the program just press CTRL and c to stop")
 print ("when running airodump-ng just press ctrl c to stop")
-if scan == 'Yes':
-  os.system("airodump-ng start wlan0")
-else:
-  os.system("exit")
-if os.system == 'exit':
-  print ("if you want to exit the program just press CTRL and c to stop")
-
+os.system("airodump-ng start wlan0")
 bssid = input("enter the bssid that you want to CLAP!")
 channel = input("enter the channel of the channel you wanna CLAP!")
 os.system("airodump-ng --channel (channel) --bssid (bssid) wlan0mon")
