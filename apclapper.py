@@ -16,4 +16,4 @@ else:
   aireplay_client = raw_input("enter the client you wanna CLAP:")
   client_command = "aireplay-ng - 0 -a %s -c %s wlan0mon"
   print ("copy the command below and paste it in the terminal")
-  print(client_command % x % e)
+  print(client_command % x, e)
