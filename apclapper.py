@@ -15,4 +15,3 @@ else:
 command = "aireplay-ng -0 0 -a %s -c  wlan0mon"
 print ("copy the command below and paste it in the terminal")
 print(command % x)
-print ("The APclapper...")
