@@ -1,6 +1,5 @@
-import os
-while True:
-  os.system("git pull")
+
+os.system("git pull")
 print ("if you want to exit the program just press CTRL and c to stop")
 print ("when running airodump-ng just press ctrl c to stop")
 print ("----------------------------------------------------------------")
@@ -38,6 +37,3 @@ if main_choice == 'e':
   r = raw_input("Enter the bssid of the network your targeting")
   e = raw_input("Enter the channel of the network your targeting")
   os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
-return_to_menu = input()
-  if return_to_menu != 'M':
-      break
