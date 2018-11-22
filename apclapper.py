@@ -1,5 +1,5 @@
 import os
-
+nCard = raw_input("[GMMiB-Input {Interface}] ^ ")
 print ("if you want to exit the program just press CTRL and c to stop")
 print ("when running airodump-ng just press ctrl c to stop")
 os.system("airmon-ng start wlan0")
