@@ -8,9 +8,13 @@ Contributors would be helpful!
 # INSTALLATION
 
 sudo git clone https://github.com/jobro247/AirClap.git
+
 cd AirClap
+
 git pull
+
 python AirClap.py
+
 Enjoy!
 
 # I RESERVE THE RIGHT TO THIS PROGRAM
