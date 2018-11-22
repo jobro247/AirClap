@@ -38,6 +38,6 @@ if main_choice == 'e':
   r = raw_input("Enter the bssid of the network your targeting")
   e = raw_input("Enter the channel of the network your targeting")
   os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
-    return_to_menu = input()
-    if return_to_menu != 'M':
-        break
+return_to_menu = input()
+  if return_to_menu != 'M':
+      break
