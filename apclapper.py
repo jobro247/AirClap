@@ -1,8 +1,8 @@
 import os
 
-airodumpng = input("do you want to start scanning for networks to CLAP! Yes/no")
+scan = input("do you want to start scanning for networks to CLAP Yes or no:")
 print ("when running airodump-ng just press ctrl c to stop")
-if airodumpng is "Yes":
+if scan == 'Yes':
   os.system("airodump-ng start wlan0")
 else:
   os.system("exit")
