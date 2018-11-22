@@ -39,8 +39,4 @@ if main_choice == 'e':
   os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
 main_menu = raw_input("would you like to return back into the main menu Y/n")
 if main_menu == 'y':
-  is_menu = False
-def menu():
-  pass
-def change_to_menu():
-  is_menu = True...
+  return to "import os"
