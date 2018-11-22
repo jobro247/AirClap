@@ -79,5 +79,3 @@ if main_menu == 'y':
     os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
   main_menu = raw_input("would you like to return back into the main menu Y/n")
   if main_menu == 'y':
-  
-  
