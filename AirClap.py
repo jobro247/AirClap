@@ -32,7 +32,7 @@ if main_choice == 'd':
   path = raw_input("Enter the path your pcap file:")
   b = raw_input("Enter the bssid of the network your trying to crack:")
   wordlist = raw_input("Enter the path for the wordlist:")
-  os.system("aircrack-ng -w $s -b $s $s" % (wordlist, b, (path)))
+  os.system("aircrack-ng -w $s -b $s $s" % (wordlist, b(path)))
 if main_choice == 'e':
   r = raw_input("Enter the bssid of the network your targeting")
   e = raw_input("Enter the channel of the network your targeting")
