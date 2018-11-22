@@ -2,7 +2,8 @@ import os
 
 print ("if you want to exit the program just press CTRL and c to stop")
 print ("when running airodump-ng just press ctrl c to stop")
-os.system("airodump-ng start wlan0")
+os.system("airmon-ng start wlan0")
+os.system("airodump-ng wlan0mon")
 bssid = input("enter the bssid that you want to CLAP!")
 channel = input("enter the channel of the channel you wanna CLAP!")
 os.system("airodump-ng --channel (channel) --bssid (bssid) wlan0mon")
