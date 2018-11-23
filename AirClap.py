@@ -1,5 +1,4 @@
 import os
-loop = 1
 os.system("git pull")
 print ("if you want to exit the program just press CTRL and c to stop")
 print ("when running airodump-ng just press ctrl c to stop")
@@ -21,6 +20,7 @@ if main_choice == 'b':
 if main_choice == 'c':
   lack = raw_input("Would you like to take down a network or just a target n/T:")
   if lack == 'n' or 'N':
+    os.system("airodump-ng wlan0mon")
     t = raw_input("Enter the bssid of your target!:")
     a = raw_input("Enter the channel of of your target:")
     os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (a, t))
@@ -40,4 +40,4 @@ if main_choice == 'e':
   os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
 menu_loop = raw_input("Would you like to return to main menu? y/n:")
 if menu_loop == 'y':
-  loop = 0
+  
