@@ -40,5 +40,5 @@ while True:
     e = raw_input("Enter the channel of the network your targeting")
     os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
   menu_loop = raw_input("Would you like to return to main menu? y/n:")
-  if y != 'y':
+  if menu_loop != 'y':
     break
