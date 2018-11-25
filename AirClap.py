@@ -19,7 +19,7 @@ while True:
   if main_choice == 'b':
     os.system("airmon-ng start wlan0")
   if main_choice == 'c':
-    lack = raw_input("Would you like to take down a network or just a target n/T:")
+    lack = raw_input("Would you like to take down a network or just a target t/T:")
     if lack == 'n' or 'n':
       os.system("airodump-ng wlan0mon")
       t = raw_input("Enter the bssid of your target!:")
