@@ -1,3 +1,4 @@
+while True:
 import os
 os.system("git pull")
 print ("if you want to exit the program just press CTRL and c to stop")
@@ -40,4 +41,4 @@ if main_choice == 'e':
   os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
 menu_loop = raw_input("Would you like to return to main menu? y/n:")
 if menu_loop == 'y':
-  while True
+  break
