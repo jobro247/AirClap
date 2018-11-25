@@ -2,7 +2,12 @@
 This is a project created by me Josiah Crofton
 
 YOU ARE RESPONSIBLE FOR HOW YOU USE THIS PROGRAM, 
-This program is intended to kick people off their internet or jam entire networks. 
+This program is intended to kick people off their internet
+
+Scan networks
+
+And much more
+
 Contributors would be helpful!
 
 # INSTALLATION
@@ -21,21 +26,10 @@ Enjoy!
 
 No copying and Redistributing of this program!
 
-
-# Future Updates!
-
-1. You will be able to hack wifi soon with this program and not just kick people off
-
-2. Support added for wlan1mon, 0mon and 1mon
-
-3. The program will become More sophisticated
-
-4. A logo will be added and better automation for the program like numbers to choose!
-
 # SIMPLE CODE
 
-Obviously this is a very simple script with only around 50 - 100 lines of code
+Obviously this is a very simple script with only a small amount of code!
 
-# THIS WILL BE DISCONTINUED VERY SOON
+# DISCONTINUED
 
-I am going to this a few bugs and patch a few things and then this project will be done!
+As of 11/24/2018 This program has been discontinued!
