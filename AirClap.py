@@ -33,8 +33,8 @@ while True:
       aireplay_client = raw_input("Enter the client you want to target:")
       os.system("aireplay-ng -0 0 -a %s -c %s wlan0mon" % (p, aireplay_client))
   if main_choice == 'd':
-    r = raw_input("Enter the bssid of the network your targeting")
-    e = raw_input("Enter the channel of the network your targeting")
+    r = raw_input("Enter the bssid of the network your scanning:")
+    e = raw_input("Enter the channel of the network your scanning:")
     os.system("airodump-ng --channel %s --bssid %s wlan0mon" % (e, r))
   menu_loop = raw_input("Would you like to return to main menu? y/n:")
   if menu_loop != 'y':
